@@ -12,7 +12,7 @@ $wgExtensionCredits['skin'][] = array(
         'version' => 'Release',
 );
 
-$wgValidSkinNames['hotoskin'] = 'HotoSkin';
+$wgValidSkinNames['hoto'] = 'Hoto';
 $wgAutoloadClasses['SkinHoto'] = __DIR__ . '/HotoSkin.php';
 
 

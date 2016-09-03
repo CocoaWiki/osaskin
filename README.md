@@ -1,2 +1,3 @@
-# Kiwitic
-HotoWiki`s Default MediaWiki Skin
+# HotoSkin
+HotoWiki's Default Skin.
+https://hoto.wiki

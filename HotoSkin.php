@@ -5,8 +5,8 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 
 class SkinHoto extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'hotoskin';
-	public $stylename = 'hotoskin';
+	public $skinname = 'hoto';
+	public $stylename = 'hoto';
 	public $template = 'HotoTemplate';
 	public $useHeadElement = true;
 
@@ -15,7 +15,7 @@ class SkinHoto extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.kiwitic' );
+		$out->addModuleScripts( 'skins.hoto' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
@@ -130,9 +130,18 @@ class HotoTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-			<li id="t-re"><?php echo '<a href="//hoto.us">';?>Hoto.US</a></li>
+			<li id="t-re"><?php echo '<a href="//hoto.us">';?>HotoUS</a></li>
 			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>호토위키 트위터</a></li>
 			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//status.hoto.us">';?>HotoUS 서버 상태</a></li>
+						</ul>
+				</li>
+				<li class="dropdown">
+                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
+                      "dropdown" data-toggle="dropdown" href="#">도움말 <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
+                      	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
 						</ul>
 				</li>
  
@@ -218,7 +227,7 @@ class HotoTemplate extends BaseTemplate {
 		</div>
 	<?php } ?>
 	<!--상단 광고 -->
-	<!-- <ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br> -->
+	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
