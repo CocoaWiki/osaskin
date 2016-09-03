@@ -278,16 +278,16 @@ ul {
     z-index: 2;
 }
 		a:link {
-			color: #0093FF;
+			color: #71400E;
 		}
 		a.new {
 			color: #BA0000;
 		}
 		a.external.text {
-			color: green;
+			color: #FFC0CB;
 		}
 		.external.autonumber {
-			color: green;
+			color: #FFC0CB;
 		}
 		a.external.text:before{
 			content: "\F0C6";
