@@ -292,14 +292,14 @@ ul {
 		a.external.text:before{
 			content: "\F0C6";
 			font-family: FontAwesome;
-			background-color: #008000;
+			background-color: #FFC0CB;
  			color: #FFFFFF;
 		}
 		.external.autonumber:before {
 			content: "\F0C6";
 			font-family: FontAwesome;
 			color: #FFFFFF;
-			background-color: #008000;
+			background-color: #FFC0CB;
 		}
 		s, strike, del {
 			color:gray;
