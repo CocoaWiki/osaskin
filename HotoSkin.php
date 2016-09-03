@@ -31,7 +31,7 @@ class SkinHoto extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-//		$out->addMeta('twitter:image', 'https://hoto.wiki/skins/skin/img/logo.png');
+		$out->addMeta('twitter:image', 'https://hoto.wiki/skins/hoto/img/twit.jpg');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F6CAA7');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
@@ -135,14 +135,6 @@ class HotoTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
 						</ul>
 				</li>
-<!--				<li class="dropdown">
-                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">도움말 <i class="fa fa-angle-down"></i>
-                      </a>
-                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-                      	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
-						</ul>
-				</li> -->
  
 				
 				<?php if ($wgUser->isLoggedIn()) {
