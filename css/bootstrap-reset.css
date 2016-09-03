@@ -278,28 +278,28 @@ ul {
     z-index: 2;
 }
 		a:link {
-			color: #71400E;
+			color: #0093FF;
 		}
 		a.new {
 			color: #BA0000;
 		}
 		a.external.text {
-			color: #FFC0CB;
+			color: green;
 		}
 		.external.autonumber {
-			color: #FFC0CB;
+			color: green;
 		}
 		a.external.text:before{
 			content: "\F0C6";
 			font-family: FontAwesome;
-			background-color: #FFC0CB;
+			background-color: #008000;
  			color: #FFFFFF;
 		}
 		.external.autonumber:before {
 			content: "\F0C6";
 			font-family: FontAwesome;
 			color: #FFFFFF;
-			background-color: #FFC0CB;
+			background-color: #008000;
 		}
 		s, strike, del {
 			color:gray;
