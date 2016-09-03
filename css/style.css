@@ -24,11 +24,11 @@ a:focus {
     color: #015301;
 }
 ::selection {
-    background: #F6CAA7;
+    background: #FFC0CB;
     color: #fff;
 }
 ::-moz-selection {
-    background: #F6CAA7;
+    background: #FFC0CB;
     color: #fff;
 }
 p { line-height: 22px }
@@ -46,7 +46,7 @@ p { line-height: 22px }
     margin-top: 30px;
     padding: 0;
 }
-.navbar-brand span { color: #F6CAA7 }
+.navbar-brand span { color: #FFC0CB }
 .head-section .navbar-collapse  ul.navbar-nav {
     float: right;
     margin-right: 0;
@@ -800,7 +800,7 @@ ul.about-flex-slides { margin-left: 0 }
     margin-bottom: 0;
     background: none;
 }
-.breadcrumb li a { color: #FFC0CB }
+.breadcrumb li a { color: #71400E }
 .breadcrumb li.active { color: #000 }
 .breadcrumbs h1 {
     font-size: 24px;
@@ -2975,5 +2975,5 @@ div.header h3{
 }
 
 .col-lg-4.col-sm-4 a {
-    color: #FFC0CB;
+    color: #71400E;
 }

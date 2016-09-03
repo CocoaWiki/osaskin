@@ -4,16 +4,16 @@ if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki pack
 
 $wgExtensionCredits['skin'][] = array(
 	'path'        => __FILE__,
-	'name'        => 'Skin',
+	'name'        => 'HotoSkin',
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
 	'author'      => 'cosmic, 김동동, 2DU, 코코아',
-	'description' => 'HotoWiki의 기본테마입니다.',
+	'description' => '호토위키의 기본테마입니다.',
         'license-name' => "FREE LICENSE",
         'version' => 'Release',
 );
 
-$wgValidSkinNames['skin'] = 'Skin';
-$wgAutoloadClasses['SkinHoto'] = __DIR__ . '/Skin.php';
+$wgValidSkinNames['hotoskin'] = 'HotoSkin';
+$wgAutoloadClasses['SkinHoto'] = __DIR__ . '/HotoSkin.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );

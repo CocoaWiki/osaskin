@@ -1,2 +1,2 @@
-# Skin
-HotoWiki`s Default Skin
+# Kiwitic
+HotoWiki`s Default MediaWiki Skin

@@ -5,9 +5,9 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 
 class SkinHoto extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'skin';
-	public $stylename = 'skin';
-	public $template = 'SkinTemplate';
+	public $skinname = 'hotoskin';
+	public $stylename = 'hotoskin';
+	public $template = 'HotoTemplate';
 	public $useHeadElement = true;
 
 	/**
@@ -15,7 +15,7 @@ class SkinHoto extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.hoto' );
+		$out->addModuleScripts( 'skins.kiwitic' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
@@ -48,12 +48,12 @@ class SkinHoto extends SkinTemplate {
 
 		$out->addModuleStyles( 'skins.hoto' );
 		
-		$out->addStyle( 'skin/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'hoto/font-awesome/css/font-awesome.min.css' );
 
 	}//end setupSkinUserCss
 }
 
-class SkinTemplate extends BaseTemplate {
+class HotoTemplate extends BaseTemplate {
 	
 	public $skin;
 
@@ -83,7 +83,7 @@ class SkinTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/skin/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/hoto/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -131,8 +131,8 @@ class SkinTemplate extends BaseTemplate {
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//hoto.us">';?>Hoto.US</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>HotoWiki Twitter</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>Creater Twitter</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>호토위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
 						</ul>
 				</li>
 <!--				<li class="dropdown">
@@ -226,7 +226,7 @@ class SkinTemplate extends BaseTemplate {
 		</div>
 	<?php } ?>
 	<!--상단 광고 -->
-	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
+	<!-- <ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br> -->
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
@@ -261,7 +261,7 @@ class SkinTemplate extends BaseTemplate {
 					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
-					<a href="//secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=CL1&v_search=https://www.hoto.us/&x=6&y=5"><img class="pull-right" src="//hoto.wiki/skins/skin/img/comodo_secure_seal.png"></a>
+					<a href="//secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=CL1&v_search=https://www.kiwki.us/&x=6&y=5"><img class="pull-right" src="/skins/hoto/img/comodo_secure_seal.png"></a>
                   </div>
             </div>
         </div>
