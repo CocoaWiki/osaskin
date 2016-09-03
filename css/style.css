@@ -70,7 +70,7 @@ ul.dropdown-menu { border: none }
 .head-section .nav li.active ul.dropdown-menu li a:hover,
 .head-section .nav li.active ul.dropdown-menu li.active a {
     color: #fff;
-    background-color: #F6CAA7;
+    background-color: #FFC0CB;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -81,7 +81,7 @@ ul.dropdown-menu { border: none }
 .head-section .navbar-default .navbar-nav > .open > a:hover,
 .head-section .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #F6CAA7;
+    background-color: #FFC0CB;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
