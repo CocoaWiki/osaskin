@@ -130,11 +130,18 @@ class HotoTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
+			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>호토위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
+						</ul>
+				</li>
+				<li class="dropdown">
+                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
+                      "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//hoto.us">';?>HotoUS</a></li>
 			<li id="t-re"><?php echo '<a href="//hoto.moe">';?>HotoMoe</a></li>
 			<li id="t-re"><?php echo '<a href="//status.hoto.us">';?>HotoUS 서버 상태</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>호토위키 트위터</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
