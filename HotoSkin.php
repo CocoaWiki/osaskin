@@ -31,7 +31,7 @@ class SkinHoto extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://hoto.wiki/skins/hoto/img/twit.jpg');
+		$out->addMeta('twitter:image', 'https://hoto.wiki/skins/hoto/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F6CAA7');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
@@ -232,7 +232,8 @@ class HotoTemplate extends BaseTemplate {
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
-	} ?><br>
+	echo '<br>';
+	} ?>
 	<?php $this->html( 'bodytext' ); ?>
 	<!--하단 광고 -->
 	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
