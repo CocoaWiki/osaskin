@@ -141,7 +141,8 @@ class HotoTemplate extends BaseTemplate {
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//hoto.us">';?>HotoUS</a></li>
 			<li id="t-re"><?php echo '<a href="//hoto.moe">';?>HotoMoe</a></li>
-			<li id="t-re"><?php echo '<a href="//status.hoto.us">';?>HotoUS 서버 상태</a></li>
+			<li id="t-re"><?php echo '<a href="//issues.hoto.us">';?>HotoUS Issues Tracker</a></li>
+			<li id="t-re"><?php echo '<a href="//status.hoto.us">';?>HotoUS Status</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
