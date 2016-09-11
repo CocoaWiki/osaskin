@@ -143,7 +143,7 @@ class HotoTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//hoto.us">';?>HotoUS</a></li>
 			<li id="t-re"><?php echo '<a href="//hoto.moe">';?>HotoMoe</a></li>
 			<li id="t-re"><?php echo '<a href="//issues.hoto.us">';?>HotoUS Issues Tracker</a></li>
-			<li id="t-re"><?php echo '<a href="//hoto.info">';?>HotoUS Status</a></li>
+			<li id="t-re"><?php echo '<a href="//hoto.info">';?>HotoInfo</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
