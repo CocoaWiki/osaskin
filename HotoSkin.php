@@ -113,6 +113,7 @@ class HotoTemplate extends BaseTemplate {
 							}
 						?>
 						<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+						<li id="t-re"><?php echo '<a href="/raw/'.$_URITITLE.'">';?>문서 원본 보기</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
