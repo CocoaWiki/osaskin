@@ -852,3 +852,6 @@ div#msupload-bottom {
 div#mw-anon-edit-warning {
 	display: block;
 }
+::-webkit-scrollbar-thumb {
+	background: #EC407A; 
+}
