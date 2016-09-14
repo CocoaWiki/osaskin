@@ -31,7 +31,7 @@ class SkinHoto extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://hoto.wiki/skins/hoto/img/twit.png');
+		$out->addMeta('twitter:image', 'https://hoto.wiki/w/skins/hoto/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F6CAA7');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
