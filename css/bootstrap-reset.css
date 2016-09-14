@@ -290,14 +290,14 @@ ul {
 			color: green;
 		}
 		a.external.text:before{
-			content: "\f1fe";
-			font-family: Ionicons;
+			content: "\F0C6";
+			font-family: FontAwesome;
 			background-color: #008000;
  			color: #FFFFFF;
 		}
 		.external.autonumber:before {
-			content: "\f1fe";
-			font-family: Ionicons;
+			content: "\F0C6";
+			font-family: FontAwesome;
 			color: #FFFFFF;
 			background-color: #008000;
 		}
