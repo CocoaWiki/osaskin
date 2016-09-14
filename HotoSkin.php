@@ -49,7 +49,6 @@ class SkinHoto extends SkinTemplate {
 		$out->addModuleStyles( 'skins.hoto' );
 		
 		$out->addStyle( 'hoto/font-awesome/css/font-awesome.min.css' );
-		$out->addStyle( 'hoto/ionicons/css/ionicons.min.css' );
 
 	}//end setupSkinUserCss
 }

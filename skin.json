@@ -21,6 +21,9 @@
 				"css/bootstrap.min.css": {
 					"media": "all"
 				},
+				"ionicons/css/ionicons.min.css": {
+					"media": "all"
+				},
 				"css/common.css": {
 					"media": "all"
 				},
