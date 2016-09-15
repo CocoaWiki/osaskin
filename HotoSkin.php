@@ -194,7 +194,7 @@ class HotoTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<a href="/w/index.php?title=<?=SpecialPage::getTitleFor( 'UserLogin', null ); ?>&amp;type=signup&amp;returnto=<?php $this->html( 'title' ); ?>"><?php '<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" />' ?></a>
+				<a href="/w/index.php?title=<?=SpecialPage::getTitleFor( 'UserLogin', null ); ?>&amp;type=signup&amp;returnto=<?php $this->html( 'title' ); ?>">'<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/<?php'.$email.'?>" />' </a>
 				</li>
 				
 				<?php } ?>
