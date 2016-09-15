@@ -194,7 +194,7 @@ class HotoTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
+				<a href="/w/index.php?title=<?=SpecialPage::getTitleFor( 'UserLogin', null ); ?>&amp;type=signup&amp;returnto=<?php $this->html( 'title' ); ?>"><img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" /></a>
 				</li>
 				
 				<?php } ?>
