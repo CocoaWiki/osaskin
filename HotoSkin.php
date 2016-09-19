@@ -183,7 +183,7 @@ class HotoTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'><i class="fa fa-sign-in" aria-hidden="true"></i></a>'?>
+				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>'?>
 				</li>
 				
 				<?php } ?>
