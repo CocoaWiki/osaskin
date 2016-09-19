@@ -102,7 +102,7 @@ class HotoTemplate extends BaseTemplate {
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">문서 도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<?php
@@ -115,8 +115,18 @@ class HotoTemplate extends BaseTemplate {
 						?>
 						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-re"><?php echo '<a href="/raw/'.$_URITITLE.'">';?>문서 원본 보기</a></li>
+						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
+						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
+						<li id="t-want"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'title' => '필요한 문서 목록입니다.' ) ); ?></li>
+						</ul>
+				</li>
+				<li class="dropdown">
+                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
+                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
+                      </a>
 					    <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
+						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
 						<li id="t-want"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'title' => '필요한 문서 목록입니다.' ) ); ?></li>
 						</ul>
 				</li>
@@ -184,7 +194,7 @@ class HotoTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'<i class="fa fa-sign-in" aria-hidden="true"></i></a>'?>
+				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'><i class="fa fa-sign-in" aria-hidden="true"></i></a>'?>
 				</li>
 				
 				<?php } ?>
