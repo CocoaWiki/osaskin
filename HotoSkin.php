@@ -91,18 +91,18 @@ class HotoTemplate extends BaseTemplate {
               <ul class="nav navbar-nav">
 			  <li id="right-search">
 					<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform" role="search">
-						<input style="display: block;" class="form-control search" type="search" name="search" placeholder="Search" title=" Search <?php echo $wgSitename; ?> [ctrl-option-f]" accesskey="f" id="searchInput" autocomplete="off">
+						<input style="display: inline-block;" class="form-control search" type="search" name="search" placeholder="Search" title=" Search <?php echo $wgSitename; ?> [ctrl-option-f]" accesskey="f" id="searchInput" autocomplete="off">
  						<input type="hidden" name="title" value="특수:검색">
  					</form>				
  				</li>
-				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '최근 바뀐 문서'); ?></li>
+				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">최근 바뀐 문서</span>'); ?></li>
 				
-				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '랜덤'); ?></li>
+				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">랜덤</span>'); ?></li>
 				<?php $theMsg = 'toolbox';
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">문서 도구 <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">문서 도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<?php
@@ -113,13 +113,13 @@ class HotoTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-						<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-re"><?php echo '<a href="/raw/'.$_URITITLE.'">';?>문서 원본 보기</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">도구 <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
 					    <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
@@ -128,18 +128,16 @@ class HotoTemplate extends BaseTemplate {
 						</ul>
 				</li>
 				<li class="dropdown">
-                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
-                      </a>
+					<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
+					</a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?>호토위키 트위터</a></li>
 			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?>개발자 트위터</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
-                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">HotoUS<i class="fa fa-angle-down"></i>
-                      </a>
+					<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">HotoUS</span> <i class="fa fa-angle-down"></i>
+					</a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//hoto.us">';?>HotoUS</a></li>
 			<li id="t-re"><?php echo '<a href="//hoto.moe">';?>HotoMoe</a></li>
@@ -177,8 +175,7 @@ class HotoTemplate extends BaseTemplate {
 				
             ?>
 				<li class="dropdown">
-				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img style='width: 32px;' class="profile-img" src="//secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
+					<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo'<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ; ?></a>
 					<ul class="dropdown-menu">
 						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), $wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
@@ -194,7 +191,7 @@ class HotoTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
+				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'<i class="fa fa-sign-in" aria-hidden="true"></i></a>' ); ?>
 				</li>
 				
 				<?php } ?>
@@ -269,8 +266,8 @@ class HotoTemplate extends BaseTemplate {
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
-					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
+					<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+ 					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
 					<!--<a href="//secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=CL1&v_search=https://www.hoto.us/&x=6&y=5"><img class="pull-right" src="/skins/hoto/img/comodo_secure_seal.png"></a>-->
                   </div>
