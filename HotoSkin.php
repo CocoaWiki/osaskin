@@ -97,7 +97,7 @@ class HotoTemplate extends BaseTemplate {
  				</li>
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">최근 바뀐 문서</span>'); ?></li>
 				
-				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">랜덤</span>'); ?></li>
+				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '<i class="fa fa-random" aria-hidden="true"></i>  <span id="mobile">랜덤</span>'); ?></li>
 				<?php $theMsg = 'toolbox';
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
