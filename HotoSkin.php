@@ -157,7 +157,7 @@ class HotoTemplate extends BaseTemplate {
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo'<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ; ?></a>
 					<ul class="dropdown-menu">
-						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), ( '<i class="fa fa-user" aria-hidden="true"></i> ' $wgUser->getName() ), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
+						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), ( '<i class="fa fa-user" aria-hidden="true"></i> '$wgUser->getName() ), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '<i class="fa fa-bookmark" aria-hidden="true"></i> 주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
