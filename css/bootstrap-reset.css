@@ -315,7 +315,7 @@ div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pr
 	list-style-image: none;
 }
 html {
-	background-color: #F6CAA7;
+	background-color: #F0AD4E;
 }
 #toc {
 	display: table;
@@ -641,7 +641,7 @@ ins#noadsense {
 	margin-bottom: 5px;
 }
 .copyright p a {
-	color: #71400E;
+	color: #FFFFFF;
 }
 /* Drawer css start */
 .mode-drawer #reference-drawer {
@@ -781,19 +781,19 @@ iframe {
 	max-width: 100%;
 }
 .col-lg-4.col-sm-4 a{
-	color: #71400E !important;
+	color: #FFFFFF !important;
 }
 .mw-redirectedfrom a {
-	color: #71400E !important;
+	color: #FFFFFF !important;
 }
 .mw-redirectedfrom a:hover {
-	color: #71400E !important;
+	color: #FFFFFF !important;
 }
 .subpages a {
-	color: #71400E !important;
+	color: #FFFFFF !important;
 }
 .subpages a:hover {
-	color: #71400E !important;
+	color: #FFFFFF !important;
 }
 .navbar-collapse {
 	max-height: 427.5px;

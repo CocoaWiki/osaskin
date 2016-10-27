@@ -22,18 +22,18 @@ class SkinHoto extends SkinTemplate {
 		$out->addMeta( 'description', 'HotoWiki' );
 		$out->addMeta( 'keywords', 'wiki,HotoWiki,호토위키,' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#F6CAA7');
+		$out->addMeta('theme-color', '#F0AD4E');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#F6CAA7'); 
+		$out->addMeta('msapplication-navbutton-color', '#F0AD4E'); 
 //		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
-		$out->addMeta('twitter:site', '@hoto_api');
+		$out->addMeta('twitter:site', '@osawiki');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://hoto.wiki/w/skins/hoto/img/twit.png');
+		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/hoto/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
-		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F6CAA7');
+		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F0AD4E');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
 //		트위터 카드 완료
 	}//end initPage
@@ -110,19 +110,14 @@ class HotoTemplate extends BaseTemplate {
 						<li id="t-re"><a href="/wiki/특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
 						<li id="t-re"><?php echo '<a href="/wiki/특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
-						<li id="t-re"><?php echo '<a href="/raw/'.$_URITITLE.'">';?><i class="fa fa-eye" aria-hidden="true"></i> 문서 원본 보기</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
 					</a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-			<li id="t-re"><?php echo '<a href="//hoto.us">';?><i class="fa fa-external-link" aria-hidden="true"></i> HotoUS</a></li>
-			<li id="t-re"><?php echo '<a href="//hoto.moe">';?><i class="fa fa-external-link" aria-hidden="true"></i> HotoMoe</a></li>
-			<li id="t-re"><?php echo '<a href="//issues.hoto.us">';?><i class="fa fa-exclamation-circle" aria-hidden="true"></i> HotoUS Issues Tracker</a></li>
-			<li id="t-re"><?php echo '<a href="//hoto.info">';?><i class="fa fa-info" aria-hidden="true"></i> HotoInfo</a></li> 
-			<li id="t-re"><?php echo '<a href="//twitter.com/HotoWiki">';?><i class="fa fa-twitter" aria-hidden="true"></i> 호토위키 트위터</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/CocoaYT">';?><i class="fa fa-twitter" aria-hidden="true"></i> 개발자 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//bbs.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 게시판</a></li>
+			<li id="t-re"><?php echo '<a href="//status.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 상태 확인</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">

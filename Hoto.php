@@ -4,10 +4,10 @@ if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki pack
 
 $wgExtensionCredits['skin'][] = array(
 	'path'        => __FILE__,
-	'name'        => 'HotoSkin',
+	'name'        => 'OsaSkin',
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
 	'author'      => 'cosmic, 김동동, 2DU, 코코아',
-	'description' => '호토위키의 기본테마입니다.',
+	'description' => '오사위키의 기본테마입니다.',
         'license-name' => "FREE LICENSE",
         'version' => 'Release',
 );
