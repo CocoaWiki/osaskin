@@ -22,9 +22,9 @@ class SkinOsa extends SkinTemplate {
 		$out->addMeta( 'description', 'OsaWiki' );
 		$out->addMeta( 'keywords', 'wiki,OsaWiki,오사위키,' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#FFC000');
+		$out->addMeta('theme-color', '#F0AD4E');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#FFC000'); 
+		$out->addMeta('msapplication-navbutton-color', '#F0AD4E'); 
 //		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@osawiki');
@@ -33,7 +33,7 @@ class SkinOsa extends SkinTemplate {
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osa/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
-		$out->addMeta('apple-mobile-web-app-status-bar-style', '#FFC000');
+		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F0AD4E');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
 //		트위터 카드 완료
 	}//end initPage
