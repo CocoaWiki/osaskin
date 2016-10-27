@@ -19,7 +19,7 @@ $wgAutoloadClasses['SkinOsa'] = __DIR__ . '/OsaSkin.php';
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
 $skinDir = array_pop( $skinDirParts );
 
-$wgResourceModules['skins.osaskin'] = array(
+$wgResourceModules['skins.osa'] = array(
 	'styles' => array(
 		$skinDir . '/css/bootstrap.min.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/theme.css'            => array( 'media' => 'all' ),
