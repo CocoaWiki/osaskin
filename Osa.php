@@ -12,14 +12,14 @@ $wgExtensionCredits['skin'][] = array(
         'version' => 'Release',
 );
 
-$wgValidSkinNames['hoto'] = 'Hoto';
-$wgAutoloadClasses['SkinHoto'] = __DIR__ . '/HotoSkin.php';
+$wgValidSkinNames['osaskin'] = 'OsaSkin';
+$wgAutoloadClasses['SkinOsa'] = __DIR__ . '/OsaSkin.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
 $skinDir = array_pop( $skinDirParts );
 
-$wgResourceModules['skins.hoto'] = array(
+$wgResourceModules['skins.osaskin'] = array(
 	'styles' => array(
 		$skinDir . '/css/bootstrap.min.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/theme.css'            => array( 'media' => 'all' ),

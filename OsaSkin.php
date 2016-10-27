@@ -3,11 +3,11 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }//end if
 
-class SkinHoto extends SkinTemplate {
+class SkinOsa extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'hoto';
-	public $stylename = 'hoto';
-	public $template = 'HotoTemplate';
+	public $skinname = 'osaskin';
+	public $stylename = 'osaskin';
+	public $template = 'OsaTemplate';
 	public $useHeadElement = true;
 
 	/**
@@ -15,12 +15,12 @@ class SkinHoto extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.hoto' );
+		$out->addModuleScripts( 'skins.osaskin' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
-		$out->addMeta( 'description', 'HotoWiki' );
-		$out->addMeta( 'keywords', 'wiki,HotoWiki,호토위키,' . $this->getSkin()->getTitle() );
+		$out->addMeta( 'description', 'OsaWiki' );
+		$out->addMeta( 'keywords', 'wiki,OsaWiki,오사위키,' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', '#F0AD4E');
 //		윈도우 폰
@@ -31,7 +31,7 @@ class SkinHoto extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/hoto/img/twit.png');
+		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osaskin/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F0AD4E');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
@@ -46,15 +46,15 @@ class SkinHoto extends SkinTemplate {
 
 		parent::setupSkinUserCss( $out );
 
-		$out->addModuleStyles( 'skins.hoto' );
+		$out->addModuleStyles( 'skins.osaskin' );
 		
-		$out->addStyle( 'hoto/font-awesome/css/font-awesome.min.css' );
-		$out->addStyle( 'hoto/ionicons/css/ionicons.min.css' );
+		$out->addStyle( 'osaskin/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'osaskin/ionicons/css/ionicons.min.css' );
 		
 	}//end setupSkinUserCss
 }
 
-class HotoTemplate extends BaseTemplate {
+class OsaTemplate extends BaseTemplate {
 	
 	public $skin;
 
