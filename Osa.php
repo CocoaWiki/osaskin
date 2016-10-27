@@ -12,7 +12,7 @@ $wgExtensionCredits['skin'][] = array(
         'version' => 'Release',
 );
 
-$wgValidSkinNames['osaskin'] = 'OsaSkin';
+$wgValidSkinNames['osa'] = 'Osa';
 $wgAutoloadClasses['SkinOsa'] = __DIR__ . '/OsaSkin.php';
 
 
