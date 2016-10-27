@@ -7,7 +7,7 @@
 	"license-name": "FREE LICENSE",
 	"type": "skin",
 	"ValidSkinNames": {
-		"osaskin": "OsaSkin"
+		"osa": "Osa"
 	},
 	"AutoloadClasses": {
 		"SkinOsa": "OsaSkin.php"
@@ -45,6 +45,6 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "osaskin"
+		"remoteSkinPath": "osa"
 	}
 }

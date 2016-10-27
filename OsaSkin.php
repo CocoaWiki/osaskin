@@ -5,8 +5,8 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 
 class SkinOsa extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'osaskin';
-	public $stylename = 'osaskin';
+	public $skinname = 'osa';
+	public $stylename = 'osa';
 	public $template = 'OsaTemplate';
 	public $useHeadElement = true;
 
@@ -15,7 +15,7 @@ class SkinOsa extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.osaskin' );
+		$out->addModuleScripts( 'skins.osa' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
@@ -31,7 +31,7 @@ class SkinOsa extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osaskin/img/twit.png');
+		$out->addMeta('twitter:image', 'https://www.osawiki.com/w/skins/osa/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#F0AD4E');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
@@ -46,10 +46,10 @@ class SkinOsa extends SkinTemplate {
 
 		parent::setupSkinUserCss( $out );
 
-		$out->addModuleStyles( 'skins.osaskin' );
+		$out->addModuleStyles( 'skins.osa' );
 		
-		$out->addStyle( 'osaskin/font-awesome/css/font-awesome.min.css' );
-		$out->addStyle( 'osaskin/ionicons/css/ionicons.min.css' );
+		$out->addStyle( 'osa/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'osa/ionicons/css/ionicons.min.css' );
 		
 	}//end setupSkinUserCss
 }
