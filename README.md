@@ -1,3 +1,2 @@
-# HotoSkin
-HotoWiki's Default Skin.
-https://hoto.wiki
+#OsaSkin
+[https://osawiki.com](OsaWiki)'s Skin.
