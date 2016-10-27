@@ -13,10 +13,10 @@
 		"SkinOsa": "OsaSkin.php"
 	},
 	"MessageDirs": {
-		"hoto": "i18n"
+		"osa": "i18n"
 	},
 	"ResourceModules": {
-		"skins.hoto": {
+		"skins.osa": {
 			"styles": {
 				"css/bootstrap.min.css": {
 					"media": "all"
