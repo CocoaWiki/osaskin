@@ -118,6 +118,7 @@ class OsaTemplate extends BaseTemplate {
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//bbs.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 게시판</a></li>
 			<li id="t-re"><?php echo '<a href="//status.osawiki.com">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 상태 확인</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/osawiki">';?><i class="fa fa-external-link" aria-hidden="true"></i> 오사위키 트위터</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
